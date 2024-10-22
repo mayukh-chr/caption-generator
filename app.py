@@ -1,11 +1,8 @@
-# app.py
 import streamlit as st
 import numpy as np
-import tensorflow as tf
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
-from transformers import BlipProcessor, BlipForConditionalGeneration
 from PIL import Image
-import io
+import torch
+from transformers import BlipProcessor, BlipForConditionalGeneration
 
 # Set page config
 st.set_page_config(page_title="Caption Generator App", page_icon="📷")
